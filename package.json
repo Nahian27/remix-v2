@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev --manual -c \"pnpm run start\"",
+    "start": "wrangler pages dev --compatibility-date=2023-06-21 ./public",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@remix-run/cloudflare": "^1.19.3",
+    "@remix-run/cloudflare-pages": "^1.19.3",
+    "@remix-run/css-bundle": "^1.19.3",
+    "@remix-run/react": "^1.19.3",
+    "isbot": "^3.6.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230904.0",
+    "@remix-run/dev": "^1.19.3",
+    "@remix-run/eslint-config": "^1.19.3",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "eslint": "^8.49.0",
+    "typescript": "^5.2.2",
+    "wrangler": "^3.7.0"
+  },
+  "engines": {
+    "node": ">=16.13.0"
+  }
+}
